@@ -43,7 +43,7 @@ Build a responsive and visually appealing recipe page that includes an image, re
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Ayesh-07/Frontend-Projects/tree/main/recipe-page-main] 
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -90,8 +90,8 @@ CSS Tricks - Great resource for learning Flexbox and Grid.
 ## Author
 
 - Name -  Ayesha Nudrat
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- LinkdIn - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Ayesh-07](https://www.frontendmentor.io/profile/Ayesh-07)
+- LinkdIn - [Ayesha Nudrat](www.linkedin.com/in/ayesha-nudrat)
 
 
 
