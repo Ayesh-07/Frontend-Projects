@@ -44,7 +44,7 @@ Build a responsive and visually appealing recipe page that includes an image, re
 ### Links
 
 - Solution URL: (https://github.com/Ayesh-07/Frontend-Projects/tree/main/recipe-page-main) 
-- Live Site URL: [live here](frontend-projects-blush.vercel.app
+- Live Site URL: (frontend-projects-blush.vercel.app
 )
 
 ## My process
