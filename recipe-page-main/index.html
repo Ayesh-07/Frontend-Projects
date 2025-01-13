@@ -14,11 +14,16 @@
   <title>Frontend Mentor | Recipe page</title>
 
   <style>
+
+
+
     header,
     section,
     footer {
+      
       padding: 20px;
       margin: 20px;
+     
     }
 
     .attribution {
@@ -33,11 +38,22 @@
 
     }
 
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+    }
+
+
     body {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      
+      background-color: hsl(330, 100%, 98%);
       min-height: 100vh;
       margin: 50px;
       padding: 50px;
@@ -113,6 +129,11 @@
 
     /* 📱 Mobile Styles (375px) */
     @media (max-width: 375px) {
+      .container{
+     padding:20px;
+     width: 75%;
+      }
+
       body {
         margin: 10px;
         padding: 10px;
@@ -126,18 +147,17 @@
       }
 
       h1 {
-        font-size: 24px;
-        text-align: left;
+        font-size: 1.5rem;
       }
 
       h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
       }
 
       p,
       ul,
       ol {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.5rem;
       }
 
@@ -162,9 +182,13 @@
 </head>
 
 <body>
-  <img src="assets/images/image-omelette.jpeg" alt="Omelette Image">
-
+  
+  <div class="container">
   <header>
+    <img src="assets/images/image-omelette.jpeg" alt="Omelette Image">
+    <br>
+    <br>
+    <br>
     <h1>Simple Omelette Recipe</h1>
     <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
       optionally filled with your choice of cheese, vegetables, or meats.</p>
@@ -238,6 +262,7 @@
       Coded by <a href="https://www.frontendmentor.io/profile/Ayesh-07">Ayesha Nudrat</a>.
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
