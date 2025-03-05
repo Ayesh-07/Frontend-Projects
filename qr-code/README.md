@@ -32,7 +32,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 # The Challenge
 
-Build a responsive and visually appealing recipe page that includes an image, recipe details, ingredients, and instructions. The goal is to practice semantic HTML and responsive CSS design.
+The goal of this project is to build a simple and responsive QR code component using HTML and CSS. It helps beginners practice:
+✔ Writing semantic HTML 🏗
+✔ Styling with CSS Flexbox & Grid 🎨
+✔ Creating a clean and structured layout 🏷
+✔ Implementing responsive design for mobile and desktop 📱💻
 
 ### Screenshot
 
@@ -43,7 +47,7 @@ Build a responsive and visually appealing recipe page that includes an image, re
 
 ### Links
 
-- Solution URL: () 
+- Solution URL: (https://github.com/Ayesh-07/Frontend-Projects/tree/main/qr-code) 
 - Live Site URL: ()
 
 ## My process
@@ -53,7 +57,7 @@ Build a responsive and visually appealing recipe page that includes an image, re
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
+- Media Queries - For responsiveness
 
 
 ### What I learned
