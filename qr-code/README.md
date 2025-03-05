@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
 ## Table of contents
@@ -48,7 +48,7 @@ The goal of this project is to build a simple and responsive QR code component u
 ### Links
 
 - Solution URL: (https://github.com/Ayesh-07/Frontend-Projects/tree/main/qr-code) 
-- Live Site URL: ()
+- Live Site URL: (https://frontend-projects-wsm2.vercel.app/)
 
 ## My process
 
