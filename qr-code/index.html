@@ -2,125 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
-  
-  <title>Frontend Mentor | QR code component</title>
+  <title>Frontend Mentor | QR Code Component</title>
 
   <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: hsl(0, 0%, 100%);
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    }
 
-body {
-  font-family: "Outfit", sans-serif;
- 
-  background-color:  hsl(0, 0%, 100%);
-height: 100vh;
-width: 100%;
-display: flex;
-  align-items: center;
-  justify-content: center;
- flex-direction: column;
-}
+    header {
+      display: none; /* Hiding it since it's not visually needed */
+    }
 
-.container{
-  background-color:  hsl(212, 45%, 89%);
-  width: 80%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
 
-.card{
-  width: 250px;
-  height: 400px;
-  background-color:white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
-  margin-top: 0px;
- 
-}
+    .container {
+      background-color: hsl(212, 45%, 89%);
+      width: 80%;
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-.QR-box{
- width: 250px;
- height: 250px;
-background-color: hsl(202, 93%, 48%);
-  border-radius: 5px;
+    .card {
+      width: 250px;
+      height: 400px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+    }
 
-  
-}
+    .QR-box {
+      width: 250px;
+      height: 250px;
+      background-color: hsl(202, 93%, 48%);
+      border-radius: 5px;
+    }
 
-p{
-  text-align: center;
-  font-weight: 700 ;
-  font-size: 1.25rem ;
-  margin: 10px 0;
-}
+    p {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin: 10px 0;
+    }
 
-.text{
+    .text {
+      text-align: center;
+      font-weight: 400;
+      font-size: 0.9375rem;
+    }
 
-text-align: center;
-  font-weight: 400 ;
-  font-size: 0.9375rem ;
- 
- 
- 
-}
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 5px;
+    }
 
-img{
-  width: 250px;
-  height: 250px;
-  border-radius: 5px;
-}
+    footer {
+      padding: 15px;
+      text-align: center;
+      font-size: 11px;
+    }
 
-footer{
-  padding: 15px;
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-}
+    footer a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
 
-@media (max-width: 768px) {
-  .container {
-    width: 80%;
-    padding: 15px;
-  }
+    /* Media Query for tablets */
+    @media (max-width: 768px) {
+      .container {
+        width: 80%;
+        padding: 15px;
+      }
+    }
 
-}
-
-/* Media Query for mobile screens */
-@media (max-width: 375px) {
-  .container {
-    width: 90%;
-    padding: 10px;
-  }
-
-}
-    
+    /* Media Query for mobile screens */
+    @media (max-width: 375px) {
+      .container {
+        width: 90%;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-<div class="card">
-  <div class="QR-box">
-<img src="images/image-qr-code.png" alt="">
-  </div>
-<p>Improve Your Front-end skills by building projects</p>
-<p class="text">Scan the QR code to visit Frontend Mentor and  take your coding skills to the next level.</p>
-</div>
+  <header>
+    <h1>QR Code Component</h1> <!-- Hidden, but useful for accessibility -->
+  </header>
 
-  </div>
-  
+  <main>
+    <div class="container">
+      <div class="card">
+        <div class="QR-box">
+          <img src="images/image-qr-code.png" alt="QR Code leading to Frontend Mentor">
+        </div>
+        <p>Improve Your Front-end skills by building projects</p>
+        <p class="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+      </div>
+    </div>
+  </main>
 
- 
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded by You.</p>
+  </footer>
+
 </body>
 </html>
