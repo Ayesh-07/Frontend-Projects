@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-Design](./design/desktop-design.jpg)
-![Mobile-Design](./design/mobile-design.jpg)
+![Desktop-Design](./design/desktop-design.png)
+![Mobile-Design](./design/mobile-design.png)
 
 ### Links
 
 - Solution URL: [https://github.com/Ayesh-07/Frontend-Projects/tree/main/stats-preview-card]
-- Live Site URL: [https://stats-preview-card-sample.netlify.app]
+- Live Site URL: [https://frontend-projects-k6xe.vercel.app/]
 
 ## My process
 
