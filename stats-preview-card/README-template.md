@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
+- Solution URL: [https://github.com/Ayesh-07/Frontend-Projects/tree/main/stats-preview-card]
 - Live Site URL: [https://stats-preview-card-sample.netlify.app]
 
 ## My process
