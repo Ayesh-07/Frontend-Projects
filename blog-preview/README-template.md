@@ -19,14 +19,14 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![desktop-design](./design\desktop-design.png)
+![desktop-design](./design/desktop-design.png)
 
-![mobile-design](./design\mobile-design.png)
+![mobile-design](./design/mobile-design.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Ayesh-07/Frontend-Projects/tree/main/blog-preview)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
