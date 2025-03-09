@@ -38,7 +38,7 @@
       background-color: white;
       border: 1px solid black;
       box-shadow: 5px 5px 3px rgba(0, 0, 0);
-      padding: 15px;
+      padding: 20px;
 
       border-radius: 12px;
     }
@@ -63,70 +63,79 @@
 
     .publish {
       font-weight: 600;
-    
+
     }
 
-    h3 {
+    h2 {
       font-weight: 800;
     }
 
-    .para{
+    h1 {
+      display: none;
+    }
+
+    .para {
       color: hsl(0, 0%, 42%);
     }
 
-    .icon{
+    .icon {
       margin-top: 20px;
       display: grid;
       grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 10px; 
+      align-items: center;
+      gap: 10px;
       font-size: small;
-    
-      
+
+
     }
-    .icon>img{
+
+    .icon>img {
       width: 45px;
 
     }
 
     @media (max-width: 375px) {
-  .container {
-    width: 90%; /* Adjust width for smaller screens */
-    padding: 10px; /* Reduce padding */
-  }
+      .container {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        padding: 10px;
+        /* Reduce padding */
+      }
 
-  .image > img {
-    width: 100%;
-  }
+      .image>img {
+        width: 100%;
+      }
 
-  .button {
-    width: 80px;
-    height: 25px;
-    font-size: 14px;
-  }
+      .button {
+        width: 80px;
+        height: 25px;
+        font-size: 14px;
+      }
 
-  .icon > img {
-    width: 35px; /* Reduce avatar size */
-  }
+      .icon>img {
+        width: 35px;
+        /* Reduce avatar size */
+      }
 
-  .icon h3 {
-    font-size: 14px;
-  }
-}
+      .icon h3 {
+        font-size: 14px;
+      }
+    }
 
 
 
-@media (min-width: 1024px) {
-  .container {
-    width: 320px; 
-  }
-}
-
+    @media (min-width: 1024px) {
+      .container {
+        width: 320px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
+
+    <h1>Blog-project</h1>
 
     <div class="container">
       <div class="image">
@@ -143,15 +152,16 @@
         <h2>
           HTML & CSS foundations
         </h2>
-        <p class="para">These languages are the backbone of every website, defining structure, content, and presentation.
+        <p class="para">These languages are the backbone of every website, defining structure, content, and
+          presentation.
         </p>
       </div>
 
       <div class="icon">
         <img src="./assets/images/image-avatar.webp" alt="">
-        <h3>  Greg Hooper</h3>
+        <h3> Greg Hooper</h3>
       </div>
-    
+
     </div>
 
 
