@@ -12,7 +12,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -27,8 +27,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ayesh-07/Frontend-Projects/tree/main/3-column-preview-card)
-- Live Site URL: [Add live site URL here](https://frontend-projects-w7tq.vercel.app/)
+- Solution URL:(https://github.com/Ayesh-07/Frontend-Projects/tree/main/3-column-preview-card)
+- Live Site URL: (https://frontend-projects-w7tq.vercel.app/)
 
 ## My process
 
