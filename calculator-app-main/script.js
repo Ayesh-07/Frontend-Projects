@@ -19,10 +19,16 @@ btn.forEach((ele) => {
             if (operator === '') {
                 firstNumber += value;
                 screen.innerText = firstNumber;
-            } else {
+                
+
+            
+            }else {
                 secondNumber += value;
                 screen.innerText = firstNumber + " " + operator +" "+ secondNumber;
             }
+             
+
+            
         } 
         // Operator is pressed
         else if (value === '+' || value === '-' || value === '*' || value === '/') {
@@ -33,11 +39,11 @@ btn.forEach((ele) => {
             console.log('Operator selected:', operator);
         } 
 
+
+
      // Equal button is pressed
         else if (value === '=') {
-
             
-       
             let num1 = parseFloat(firstNumber);
             let num2 = parseFloat(secondNumber);
 
@@ -49,6 +55,9 @@ btn.forEach((ele) => {
                 result = num1 * num2;
             } else if (operator === '/') {
                 result = num1 / num2;
+                if(operator === '/' & secondNumber === '0'){
+                 alert("Error : Cannot divide by 0")
+                }
             }
 
             screen.innerText = result;
