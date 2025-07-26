@@ -19,9 +19,8 @@ operators), and we show the result on the screen.
 
 
 ### Links
-
-- Solution URL: [https://github.com/Ayesh-07/Frontend-Projects/tree/main/stats-preview-card]
-- Live Site URL: [https://frontend-projects-k6xe.vercel.app/]
+- Solution URL: [https://github.com/Ayesh-07/Frontend-Projects/tree/main/calculator-app-main]
+- Live Site URL: [https://frontend-projects-98es.vercel.app/]
 
 ## Process
 - Calculatorʼs Working Like a Human Brain 
