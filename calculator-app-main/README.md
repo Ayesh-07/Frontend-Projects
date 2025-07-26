@@ -15,8 +15,8 @@ operators), and we show the result on the screen.
 
 ### Screenshot
 
-![Desktop-Design](./design/desktop-design.png)
-![Mobile-Design](./design/mobile-design.png)
+![Desktop-Design](./Design/calculator.png)
+
 
 ### Links
 
