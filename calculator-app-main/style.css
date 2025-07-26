@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+background-color: hsl(222, 26%, 31%);
+font-family: "League Spartan", sans-serif;
+font-weight: 700;
+
+
+}
+
+.main-background{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.screen-background{
+
+display: flex;
+flex-direction: row;
+justify-content: end;
+align-items: center;
+    width: 27%;
+    height:15% ;
+    background-color:   hsl(224, 36%, 15%);
+    border: 1px solid  hsl(222, 26%, 31%);
+    border-radius: 5px;
+
+}
+
+.screen-background>p{
+ padding: 30px; 
+color: white;
+font-size: 1.5rem;
+}
+
+.keypad-background{
+
+    border: 1px solid  hsl(222, 26%, 31%);
+    border-radius: 5px;
+
+    margin-top: 20px;
+    width: 350px;
+    height: 50%;
+   
+    background-color:   hsl(224, 36%, 15%);
+}
+
+.theme {
+ 
+   
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+
+
+.calculator__keys{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 15px; /
+
+   
+    
+}
+
+.cal{
+    padding: 20px;
+}
+
+
+.calculator__key{
+ height: 40px;
+ font-size: 1.2rem;
+ border-radius: 2px;
+ border: none;
+}
+
+
