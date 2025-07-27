@@ -67,7 +67,7 @@ btn.forEach((ele) => {
         
         
 
-        else if ('Ans')
+        else if ('Dell')
             
             {
                screen.innerText = screen.innerText.slice(0 ,-1)
