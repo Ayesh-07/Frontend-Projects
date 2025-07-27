@@ -2,52 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
   
   <title>Calculator app</title>
 
 
 </head>
-<body>
-<div class="main-background">
+<body class="bg-[#0d1b2a]  font-sans text-white font-semibold" >
+<div class="main-background w-full h-screen flex flex-col justify-center items-center">
  
-    <div class="theme">
-      <p>Calculator</p> 
+    <div class="theme mb-[15px] flex flex-row justify-between text-white ">
+      <p >Calculator</p> 
     <p></p>
     </div>
     
   
 
-  <div class="screen-background">
-   <p>0</p> 
+  <div class="screen-background rounded-xs flex flex-row 
+  justify-end items-center w-[27%] h-[15%] bg-[#1b263b]  
+  border border-[hsl(222,26%,31%)] rounded-[5px]">
+   <p class="p-10 text-2xl text-white">0</p> 
   </div>
 
-  <div class="keypad-background">
+  <div class="keypad-background border border-[hsl(222,26%,31%)] 
+  rounded-[5px] mt-5 w-[350px] h-1/2 bg-[#1b263b] ">
 
-    <div class="cal">
-      <div class="calculator__keys">
+
+
+    
+
+
+
+    <div class="cal p-[20px]">
+      <div class="calculator__keys grid grid-cols-4 gap-[15px]">
    
-    <button class="calculator__key">7</button>
-    <button class="calculator__key">8</button>
-    <button class="calculator__key">9</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">7</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">8</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">9</button>
    
-    <button class="calculator__key">4</button>
-    <button class="calculator__key">5</button>
-    <button class="calculator__key">6</button>
-    <button class="calculator__key">+</button>
-    <button class="calculator__key">1</button>
-    <button class="calculator__key">2</button>
-    <button class="calculator__key">3</button>
-    <button class="calculator__key">-</button>
-    <button class="calculator__key">.</button>
-    <button class="calculator__key">0</button>
-    <button class="calculator__key">/</button>
-    <button class="calculator__key">*</button>
-    <button class="calculator__key"  style="background-color: red; color:white">Reset</button>
-     <button class="calculator__key" style="width: 470%; font-size:1.7rem; background-color:aquamarine; color:rgb(15, 15, 15); font-weight:bolder">=</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#00b4d8] ">+</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">4</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">5</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">6</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#00b4d8] ">-</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">2</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">3</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#0077b6] ">1</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#00b4d8] ">.</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#00b4d8] ">0</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-cyan-500">/</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-cyan-500">*</button>
+    <button class="calculator__key h-10 text-[1.5rem] rounded-[2px] bg-[#293241]">Dell</button>
+     <button class="calculator__key h-10 w-77 text-[1.5rem]  rounded-[2px]  bg-[#ee6c4d]">=</button>
   </div>
 
   </div>
