@@ -52,9 +52,7 @@ btn.forEach((ele) => {
                 result = firstNumber + secondNumber;
             } else if (operator === '/') {
                 result = firstNumber / secondNumber;
-                if(operator === '/' && secondNumber === '0'){
-                 alert("Error : Cannot divide by 0")
-                }
+                
             }
                 screen.innerText = firstNumber + " " + operator ;
                 console.log('Operator selected:', operator);
