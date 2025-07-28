@@ -52,7 +52,7 @@ btn.forEach((ele) => {
                 result = firstNumber + secondNumber;
             } else if (operator === '/') {
                 result = firstNumber / secondNumber;
-                if(operator === '/' & secondNumber === '0'){
+                if(operator === '/' && secondNumber === '0'){
                  alert("Error : Cannot divide by 0")
                 }
             }
