@@ -15,7 +15,7 @@ operators), and we show the result on the screen.
 
 ### Screenshot
 
-![Desktop-Design](./Design/calculator.png)
+![Desktop-Design](./Design/image.png)
 
 
 ### Links
