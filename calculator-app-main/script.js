@@ -35,9 +35,6 @@ btn.forEach((ele) => {
                  screen.innerText = (firstNumber + " " + operator +" "+ secondNumber);
                
             }
-             
-
-            
         } 
 
         
