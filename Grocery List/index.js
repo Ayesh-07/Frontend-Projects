@@ -1,165 +1,120 @@
 
 let groceryList = []
 
-// Start hone pe menu dikhaye:
+
+    // Add Items
+
+    let item = document.querySelector('#add-items')
+    let btn  =  document.querySelector('.add-btn')
+
+    btn.addEventListener(('click'), ()=>{
+      
+      let value = item.value.trim()
+      if (value != '') {
+      groceryList.push(value)
+      console.log(`"${value}"  item  successfully added.`);
+      item.value = '';
+      
+      let display = document.querySelector('.items')
+      groceryList.forEach(() => {
+      display.innerHTML = groceryList
+      
+    });
+    
+      }})
 
 
-function Menu() {
-    console.log(`
-Grocery List App
-1. Add item
-2. Remove item
-3. View list
-4. Search item
-5. Update item
-6. Filter items by letter
-7. Exit
-`)
-}
 
+    // Delete Items
 
-// .push() → item add karne ke liye
-
-function addItem() {
-    let item = prompt("Enter Item's name for adding")
-    if (item) {
-        groceryList.push(item)
-        console.log(`✅ " ${item}"  item  successfully added.`);
-
-    }
-}
-
-
-// .splice() → item remove/edit karne ke liye
-
-function removeItem() {
-    let item = prompt("Enter Item's name for removing")
-    const index = groceryList.indexOf(item);
-    if (item) {
+     let delItems = document.querySelector('#del-item') 
+     let del= document.querySelector('.del-btn')
+     let delItem = document.querySelector('.delItem')       
+     del.addEventListener(('click') , ()=>{   
+    let delvalue = delItems.value.trim()         
+    const index = groceryList.indexOf(delvalue);
+    if (delvalue) {
         groceryList.splice(index, 1)
-        console.log(`✅ " ${item}"  item  successfully removed`);
-
-    }
-}
-
-
-
-// forEach() sab item dikhane ke liye
-
-
-function viewList() {
-  if (groceryList.length === 0) {
-    console.log("Grocery list is empty.");
-  } else {
-    console.log(" Your Grocery List:");
-    groceryList.forEach((item, index) => {
-      console.log(`${index + 1}. ${item}`);
+        delItem.innerText=`" ${delvalue}"  item  successfully removed`;
+        let dis = document.querySelector('.items')
+         groceryList.forEach(() => {
+         dis.innerHTML = groceryList
+      
     });
 
-    // list
-    console.log("\n List: " + groceryList.join(", "));
-  }
-}
+    }
+
+     })
 
 
+     // Edit Items
 
-//  .indexOf() → search karne ke liye
 
-function searchItem() {
-    let item = prompt("Enter Item's name for searching")
-    const index = groceryList.indexOf(item);
+     let editBtn = document.querySelector('.edit-btn')
+     let oldItem = document.querySelector('#oldItem')
+      let newItem = document.querySelector('#newItem')
+      let editedValue = document.querySelector('.editedValue')
+      
+   editBtn.addEventListener('click' , ()=>{
+
+     const index = groceryList.indexOf(oldItem.value);
     if (index !== -1) {
-        console.log(`Your ${item}" found at position ${index + 1}`);
+        groceryList.splice(index, 1, newItem.value);
+       editedValue.innerText = `"${oldItem.value}" updated to "${newItem.value}"`;
+    } else {
+        editedValue.innerText = ` "${oldItem.value}" not found`;
+    }
+
+
+   })
+   
+
+
+
+    // Search Items
+
+    
+    let searchItem = document.querySelector('#search-item')
+    let searchBtn = document.querySelector('.searchBtn')
+    let searchedItem = document.querySelector('.SItem')
+    
+    searchBtn.addEventListener('click', ()=>{
+        let Searchitm = searchItem.value.trim()
+       const index = groceryList.indexOf(Searchitm);
+
+        if (index !== -1) {
+        searchedItem.innerText = `Your item "${Searchitm}" found at position ${index + 1}`;
     }
     else {
-        console.log(`❌ " ${item}"  item is not found`);
+        searchedItem.innerText = ` Your item" ${Searchitm}"  item is not found`;
     }
 
-}
-
-// indexof - for Updating the item
 
 
-function Updateitem() {
-    let oldItem = prompt("Enter Item that you want to update")
-    const index = groceryList.indexOf(oldItem);
-    if (index !== -1) {
-        let newItem = prompt("Enter new Item that you want to Add")
-        groceryList.splice(index, 1, newItem);
-        console.log(`"${oldItem}" updated to "${newItem}"`);
-    } else {
-        console.log(`❌ "${oldItem}" not found`);
-    }
-}
+    })
+     
 
+    // Filter Items
 
+    
+     let filterBtn = document.querySelector('.filterItem')
+     let filterItem = document.querySelector('#filter-item')
+     let filteredItem = document.querySelector('.found')
 
-// .filter() Filter items by letter
-
-
-function FilterByLetter() {
-  let letter = prompt("Enter first letter of item to filter:");
-  if (letter) {
+     filterBtn.addEventListener('click' , ()=>{
+      
+  if (filterItem) {
     let filtered = groceryList.filter((item) => 
-      item.toLowerCase().startsWith(letter.toLowerCase())
+      item.toLowerCase().startsWith(filterItem.value.toLowerCase())
     );
 
     if (filtered.length > 0) {
-      console.log(`📌 Items starting with "${letter}":`);
-      console.log(filtered.join(", "));
+      filteredItem.innerText = ` Items starting with "${filterItem.value}": is ${filtered.join(", ")}`
+     
     } else {
-      console.log(`❌ No items found starting with "${letter}".`);
+        filteredItem.innerText = ` No items found starting with "${filterItem.value}".`;
     }
   }
-}
-
-
-
-// Main Code for runing 
-
-let running = true;
-while(running === true){
-Menu()
-// User option choose kare prompt se
-let choose = prompt("Choose One option from (1 to 7)");
-
-switch(choose){
-    case "1" :
-    addItem();
-    break;
-
-    case "2" :
-    removeItem();
-    break;
-
-
-    case "3" :
-    viewList();
-    break;
-
-    case "4" :
-    searchItem();
-    break;
-
-    case "5" :
-    Updateitem();
-    break;
-
-    case "6" :
-    FilterByLetter();
-    break;
-
-    case "7" :
-    console.log("Exit ... Thankyou")
-     running = true;
-    break;
-
-    default:
-    console.log("❌ Invalid choice. Try again.");
-
-}
-
-
-}
-
-
+     })
+  
+  
