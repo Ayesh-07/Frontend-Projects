@@ -61,6 +61,11 @@ let groceryList = []
     if (index !== -1) {
         groceryList.splice(index, 1, newItem.value);
        editedValue.innerText = `"${oldItem.value}" updated to "${newItem.value}"`;
+         let edit = document.querySelector('.items')
+         groceryList.forEach(() => {
+         edit.innerHTML = groceryList
+         })
+        
     } else {
         editedValue.innerText = ` "${oldItem.value}" not found`;
     }
