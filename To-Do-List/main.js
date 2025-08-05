@@ -26,8 +26,10 @@ function createList(itemText) {
     container.className = 'Container';
     li.style.margin = '16px 0';
     deletebtn.style.width = '50px';
+     deletebtn.style.padding = '1px';
     deletebtn.style.backgroundColor = '#D92C54';
     editBtn.style.width = '50px';
+     editBtn.style.padding = '1px';
     editBtn.style.backgroundColor = '#8ABB6C';
 
     container.appendChild(li);
@@ -128,5 +130,6 @@ clearbtn.addEventListener('click', () => {
         localStorage.setItem('Array', JSON.stringify(arr));
     }
 });
+
 
 
