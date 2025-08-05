@@ -81,6 +81,20 @@ ul>li,p{
 }
 
 
+
+.container{
+    width: auto;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul > li {
+  margin: 20px 0;
+}
+
+
 /* width below 992px */
 @media (max-width: 992px) {
     .main {
@@ -133,7 +147,7 @@ ul>li,p{
     }
 
     ul>li,p{
-        font-size: small;
+        font-size: medium;
     }
 }
 
@@ -161,7 +175,7 @@ ul>li,p{
         padding:1px;
     }
     ul>li,p {
-        font-size: x-small;
+        font-size: small;
     }
 }
 
