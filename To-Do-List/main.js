@@ -23,7 +23,7 @@ function createList(itemText) {
     deletebtn.textContent = 'Delete';
     li.textContent = itemText;
 
-    container.className = 'container';
+    container.className = 'Container';
     li.style.margin = '16px 0';
     deletebtn.style.width = '80px';
     deletebtn.style.backgroundColor = '#D92C54';
@@ -128,3 +128,4 @@ clearbtn.addEventListener('click', () => {
         localStorage.setItem('Array', JSON.stringify(arr));
     }
 });
+
